@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logo.png" />
+    <title>Encuesta Jr.</title>
+  </head>
+  <body>
+    <h1 id="title">Encuesta</h1>
+    <p id="description">Desarrolladores Web Jr.</p>
+    <form id="survey-form">
+      <div class="containerDatos">
+        <label for="name" id="name-label">Nombre</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Introduce tu nombre"
+          required
+        />
+      </div>
+
+      <div class="containerDatos">
+        <label for="email" id="email-label">Correo</label>
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="Introduce tu correo"
+          required
+        />
+      </div>
+
+      <div class="containerDatos">
+        <label for="number" id="number-label">Edad</label>
+        <input id="number" type="number" min="18" max="100" placeholder="18" />
+      </div>
+
+      <div class="containerDatos">
+        <label for="dropdown"> ¿Donde estudiaste?</label>
+        <select name="option" id="dropdown">
+          <option value="seleccion" selected disabled>Seleccionar</option>
+          <option value="universidad">Universidad</option>
+          <option value="curso">Curso</option>
+          <option value="autodidacta">Autodidacta</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="containerColumn">
+        <label for="recommend">¿En que te gustaria especializarte?</label>
+        <article>
+          <input
+            type="radio"
+            name="recommend"
+            id="fullStack"
+            value="fullStack"
+          />
+          <label for="fullStack">Full Stack</label>
+        </article>
+        <article>
+          <input type="radio" name="recommend" id="frontEnd" value="frontEnd" />
+          <label for="frontEnd">Front End</label>
+        </article>
+        <article>
+          <input type="radio" name="recommend" id="backEnd" value="backEnd" />
+          <label for="backEnd">Back End</label>
+        </article>
+        <article>
+          <input type="radio" name="recommend" id="noSeguro" value="noSeguro" />
+          <label for="noSeguro">No estoy seguro/a</label>
+        </article>
+      </div>
+
+      <div class="containerColumn">
+        <label for="conocimiento">¿Que conocimientos tenés?</label>
+        <article>
+          <input type="checkbox" name="conocimiento" id="html" value="html" />
+          <label for="html">HTML</label>
+        </article>
+        <article>
+          <input type="checkbox" name="conocimiento" id="css" value="css" />
+          <label for="css">CSS</label>
+        </article>
+        <article>
+          <input type="checkbox" name="conocimiento" id="js" value="js" />
+          <label for="js">JavaScript</label>
+        </article>
+        <article>
+          <input
+            type="checkbox"
+            name="conocimiento"
+            id="bootstrap"
+            value="bootstrap"
+          />
+          <label for="bootstrap">Bootstrap</label>
+        </article>
+        <article>
+          <input type="checkbox" name="conocimiento" id="git" value="git" />
+          <label for="git">Git / GitHub</label>
+        </article>
+        <article>
+          <input type="checkbox" name="conocimiento" id="otro" value="otro" />
+          <label for="otro">Otro</label>
+        </article>
+      </div>
+
+      <div class="containerColumn">
+        <label for="commet">Algo que te gustaria comentar</label>
+        <textarea
+          name="commet"
+          id="commet"
+          cols="30"
+          rows="10"
+          placeholder="Agrega tu comentario aquí..."
+        ></textarea>
+      </div>
+
+      <button id="submit">Enviar</button>
+    </form>
+
+    <footer>
+      <p>
+        Proyecto realizado por
+        <a href="https://maravsf.github.io/">Mariela Verón</a> para
+        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+          >freeCodeCamp</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
